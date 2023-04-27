@@ -4,7 +4,7 @@ height: fill-container
 align-content: top-center
 padding.px: 20
 
--- lib.button: Get a Demo
+-- button: Get a Demo
 link: https://fastn.com/expander
 text-color: $monochrome-dark
 bg-color: $monochrome-light

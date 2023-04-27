@@ -1,9 +1,5 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
+-- fastn.package: gargajit.github.io/fastn-projects
 
--- fastn.dependency: fifthtry.github.io/doc-site as ds
--- fastn.dependency: fifthtry.github.io/bling as bling
 
--- fastn.auto-import: bling/chat as chat
--- fastn.auto-import: ds

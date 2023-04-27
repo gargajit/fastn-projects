@@ -1,0 +1,51 @@
+-- component button:
+caption title:
+optional string link:
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color bg-color: $inherited.colors.background.base
+ftd.color border-color: $inherited.colors.border-strong
+optional ftd.shadow hover-shadow:
+boolean $is-hover: false
+
+-- ftd.text: $button.title
+link: $button.link
+border-width.px: 2
+padding.px: 10
+border-radius.px: 6
+min-width.fixed.px: 175
+style: bold
+text-align: center
+color: $button.text-color
+role: $inherited.types.copy-regular
+background.solid: $button.bg-color
+border-color: $button.border-color
+shadow if { button.is-hover }: $button.hover-shadow
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-hover, v = false)
+
+-- end: button
+
+
+
+-- ftd.color monochrome-dark:
+light: black
+dark: white
+
+-- ftd.color monochrome-light:
+light: white
+dark: black
+
+-- ftd.color shadow-color:
+light: #cae9ee
+dark: #e4b0ac
+
+-- ftd.shadow s:
+color: $shadow-color
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 50
+spread.px: 7
+
+
+
+

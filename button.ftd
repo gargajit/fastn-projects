@@ -1,3 +1,20 @@
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: top-center
+padding.px: 20
+
+-- lib.button: Get a Demo
+link: https://fastn.com/expander
+text-color: $monochrome-dark
+bg-color: $monochrome-light
+border-color: $shadow-color
+hover-shadow: $s
+
+-- end: ftd.column
+
+
+
 -- component button:
 caption title:
 optional string link:

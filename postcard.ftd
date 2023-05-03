@@ -1,0 +1,177 @@
+-- import: fifthtry.github.io/doc-site as ds
+-- import: gargajit.github.io/desert-cs
+
+-- ds.page: Postcard 
+site-logo: $assets.files.images.logo.svg
+colors: $desert-cs.main
+$widthfill: true
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding.px: 100
+
+
+
+-- post-card: FUSION VENTURES
+subtitle: We invest in companies that make a difference
+image: $assets.files.images.card-image.png
+bg-color: $bg
+cta-link: https://fastn.com
+cta-text: Learn more
+cta-bg-color: $cta-bg
+cta-border-color: $cta-border
+shadow: $s
+text-color: $txt
+cta-text-color: $cta-txt
+
+
+A group of investors helping companies establish, develop, and change the
+world.
+
+-- end: ftd.column
+
+-- end: ds.page
+
+
+
+
+-- component post-card:
+caption title:
+optional string subtitle:
+optional body description:
+optional ftd.image-src image:
+optional string cta-link:
+optional string cta-text:
+optional ftd.color text-color: $inherited.colors.text-strong
+optional ftd.color bg-color: $inherited.colors.background.base
+optional ftd.color border-color: $inherited.colors.border-strong
+optional ftd.color cta-bg-color: $inherited.colors.cta-primary.base
+optional ftd.color cta-border-color: $inherited.colors.cta-primary.border
+optional ftd.color cta-text-color: $inherited.colors.cta-primary.text
+optional ftd.shadow shadow: 
+
+
+-- ftd.row:
+width.fixed.px: 1050
+color: $inherited.colors.text
+border-width.px: 2
+border-color: $border
+background.solid: $post-card.bg-color
+height.fixed.px: 420
+shadow: $post-card.shadow
+
+
+
+-- ftd.column:
+width.fixed.percent: 50
+padding-left.px: 100
+padding-right.px: 40
+color: $post-card.text-color
+
+
+
+-- ftd.text: $post-card.title
+role: $inherited.types.heading-tiny
+margin-bottom.px: 35
+margin-top.px: 45
+
+
+-- ftd.text: $post-card.subtitle
+if: { post-card.subtitle != NULL }
+role: $inherited.types.heading-medium
+style: bold
+margin-bottom.px: 10
+
+
+-- ftd.text: $post-card.description
+if: { post-card.description != NULL }
+role: $inherited.types.copy-regular
+width.fixed.px: 350
+
+
+-- ftd.row:
+link: $post-card.cta-link
+color: $inherited.colors.cta-primary.text
+width.fixed.px: 200
+height.fixed.px: 50 
+background.solid: $post-card.cta-bg-color
+border-width.px: 1
+border-color: $post-card.cta-border-color
+margin-top.px: 60
+
+
+
+-- ftd.text: $post-card.cta-text
+if: { post-card.cta-text != NULL }
+role: $inherited.types.copy-small
+width.fixed.percent: 75
+padding-horizontal.px: 25
+padding-vertical.px: 15
+color: $post-card.cta-text-color
+
+
+
+-- ftd.image:
+src: $assets.files.images.white-arrow.svg
+width.fixed.percent: 26
+padding.px: 19
+background.solid: #283543
+
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+
+-- ftd.image:
+if: { post-card.image != NULL }
+src: $post-card.image
+;; width: auto
+height: fill-container
+
+
+
+-- end: ftd.row
+
+-- end: post-card
+
+
+
+
+-- ftd.color bg:
+light: #f2f4f6
+dark: #f2f4f6
+
+-- ftd.color txt:
+light: #0E1318
+dark: #0E1318
+
+-- ftd.color cta-txt:
+light: #FAFEFA
+dark: #FAFEFA
+
+-- ftd.color border:
+light: #d9dbdc
+dark: #d9dbdc
+
+-- ftd.color cta-bg:
+light: #495461
+dark: #495461
+
+-- ftd.color cta-border:
+light: #6c7580
+dark: #6c7580
+
+
+-- ftd.color shadow-color:
+light: #9ea4b2
+dark: #9ea4b2
+
+-- ftd.shadow s:
+color: $shadow-color
+x-offset.px: 3
+y-offset.px: 2
+blur.px: 50
+spread.px: 7
+

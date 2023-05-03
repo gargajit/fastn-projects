@@ -3,3 +3,17 @@
 -- fastn.package: gargajit.github.io/fastn-projects
 
 
+-- fastn.dependency: fifthtry.github.io/doc-site as ds
+-- fastn.dependency: gargajit.github.io/desert-cs
+
+-- fastn.auto-import: gargajit.github.io/fastn-projects/assets
+
+
+-- fastn.sitemap:
+
+# Home: /
+
+- `button` with fastn: /button/
+- `postcard` with fastn: /postcard/
+
+

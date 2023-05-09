@@ -1,10 +1,10 @@
 -- import: fifthtry.github.io/doc-site as ds
+-- import: fifthtry.github.io/forest-cs
 -- import: gargajit.github.io/desert-cs
 
 -- ds.page: Home page
 site-logo: $assets.files.images.logo.svg
-colors: $desert-cs.main
-$widthfill: true
+colors: $forest-cs.main
 
 -- ftd.text: Hello World
 

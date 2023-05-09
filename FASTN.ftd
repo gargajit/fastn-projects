@@ -4,12 +4,15 @@
 
 
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
+-- fastn.dependency: fifthtry.github.io/forest-cs
 -- fastn.dependency: gargajit.github.io/desert-cs
+-- fastn.dependency: fifthtry.github.io/dark-mode-switcher
+-- fastn.dependency: fifthtry.github.io/winter-cs
 
 -- fastn.auto-import: gargajit.github.io/fastn-projects/assets
 
 
--- fastn.sitemap:
+/-- fastn.sitemap:
 
 # Home: /
 

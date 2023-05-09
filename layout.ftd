@@ -1,0 +1,164 @@
+-- import: fifthtry.github.io/dark-mode-switcher as dms
+
+
+-- home-page:
+
+
+;; ===================== Home Page =====================
+
+-- component home-page:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+color: $inherited.colors.text-strong
+
+-- header:
+
+-- main:
+
+-- footer:
+
+-- dms.dark-mode-switcher-float:
+
+-- end: ftd.column
+
+
+-- end: home-page
+
+
+
+
+;; ========================HEADER========================
+
+-- component header:
+
+
+-- ftd.row:
+width: fill-container
+background.solid: $inherited.colors.background.step-2
+padding.px: 35
+
+-- ftd.text: LOGO
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+
+-- end: header
+
+
+
+
+
+
+;; ======================MAIN PART========================
+
+-- component main:
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.background.base
+
+-- left-sidebar:
+
+-- content:
+
+-- right-sidebar:
+
+-- end: ftd.row
+
+-- end: main
+
+
+;; -------------------MAIN ~ left-sidebar------------------
+
+-- component left-sidebar:
+
+-- ftd.column:
+width.fixed.percent: 25
+height: fill-container
+background.solid: $inherited.colors.background.step-1
+align-content: center
+border-width.px: 2
+border-color: $inherited.colors.border
+
+-- ftd.text: left-sidebar
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+
+-- end: left-sidebar
+
+
+
+;; -------------------MAIN ~ content------------------
+
+-- component content:
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+background.solid: $inherited.colors.background.base
+align-content: center
+border-top-width.px: 2
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+
+-- ftd.text: main content
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+
+-- end: content
+
+
+
+;; -----------------MAIN ~ right-sidebar-----------------
+
+-- component right-sidebar:
+
+
+-- ftd.column:
+width.fixed.percent: 25
+height: fill-container
+background.solid: $inherited.colors.background.step-1
+align-content: center
+border-width.px: 2
+border-color: $inherited.colors.border
+
+-- ftd.text: right-sidebar
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+
+-- end: right-sidebar
+
+
+
+
+
+
+
+;; ========================FOOTER========================
+
+-- component footer:
+
+
+-- ftd.row:
+width: fill-container
+background.solid: $inherited.colors.background.step-2
+padding.px: 20
+
+-- ftd.text: FOOTER
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+
+-- end: footer

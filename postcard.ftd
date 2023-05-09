@@ -1,10 +1,11 @@
 -- import: fifthtry.github.io/doc-site as ds
+-- import: fifthtry.github.io/winter-cs
 -- import: gargajit.github.io/desert-cs
 
 -- ds.page: Postcard 
 site-logo: $assets.files.images.logo.svg
-colors: $desert-cs.main
-$widthfill: true
+colors: $winter-cs.main
+
 
 -- ftd.column:
 width: fill-container
@@ -17,14 +18,13 @@ padding.px: 100
 subtitle: We invest in companies that make a difference
 image: $assets.files.images.card-image.png
 bg-color: $bg
-cta-link: https://fastn.com
+cta-link: http://fusion-ventures.com/
 cta-text: Learn more
 cta-bg-color: $cta-bg
 cta-border-color: $cta-border
 shadow: $s
 text-color: $txt
 cta-text-color: $cta-txt
-
 
 A group of investors helping companies establish, develop, and change the
 world.
@@ -53,14 +53,13 @@ optional ftd.shadow shadow:
 
 
 -- ftd.row:
-width.fixed.px: 1050
+width.fixed.px: 1048
 color: $inherited.colors.text
 border-width.px: 2
 border-color: $border
 background.solid: $post-card.bg-color
 height.fixed.px: 420
 shadow: $post-card.shadow
-
 
 
 -- ftd.column:
@@ -127,7 +126,6 @@ background.solid: #283543
 -- ftd.image:
 if: { post-card.image != NULL }
 src: $post-card.image
-;; width: auto
 height: fill-container
 
 
@@ -165,8 +163,8 @@ dark: #6c7580
 
 
 -- ftd.color shadow-color:
-light: #9ea4b2
-dark: #9ea4b2
+light: #829ab2
+dark: #386078
 
 -- ftd.shadow s:
 color: $shadow-color
